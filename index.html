@@ -155,49 +155,56 @@
           <h2 class="title is-3" style="text-align: center;">카메라 궤적</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-arc">
-              <video class="center" id="video1" autoplay controls muted loop height="100%">
+              <video class="center" id="video1" autoplay controls muted loop height="100%" style="max-width: 600px;">
                 <!-- Your video file here -->
                 <source src="static/videos/arc.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-truck">
-              <video class="center" poster="" id="video2" autoplay controls muted loop height="100%">
+              <video class="center" poster="" id="video2" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">
                 <!-- Your video file here -->
                 <source src="static/videos/truck.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-folder">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/folder.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-zoomin">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/zoomIn.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-arktruck">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/arctruck.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-arcouttruck">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/arcoutTruck.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-zoominarc">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/zoomInarc.mp4" type="video/mp4">
               </video>
             </div>
             <div class="item item-zoomintruck">
-              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%">\
+              <video class="center" poster="" id="video3" autoplay controls muted loop height="100%"
+                style="max-width: 600px;">\
                 <!-- Your video file here -->
                 <source src="static/videos/zoomIntruck.mp4" type="video/mp4">
               </video>
@@ -209,13 +216,23 @@
   </section>
   <!-- End video carousel -->
 
-  <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css" />
+  <!-- Best vs Worst -->
+  <section class="hero is-small hero is-light">
+    <div class="container is-max-desktop content">
+      <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css" />
+      <h2 class="title is-3" style="text-align: center;">Best vs Worst (트레비 분수)</h2>
+      <div class="columns is-centered">
 
-  <img-comparison-slider>
-    <img slot="first" src="static/images/carousel3.jpg" />
-    <img slot="second" src="static/images/carousel2.jpg" />
-  </img-comparison-slider>
+        <img-comparison-slider>
+          <img slot="first" src="static/images/better.png" style="max-width: 400px;" />
+          <img slot="second" src="static/images/worse.png" style="max-width: 400px;" />
+        </img-comparison-slider>
+      </div>
+    </div>
+  </section>
+  <!-- End Best vs Worst -->
+
 
   <!-- Teaser video-->
   <section class="hero teaser">
